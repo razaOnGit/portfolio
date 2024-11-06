@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+//import cv from "../components/mdraza-resume.pdf"
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
@@ -22,13 +22,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Md.Raza Khan",
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
+                "FullStack Developer",
                 1000,
-                "UI/UX Designer",
+                "Student",
                 1000,
               ]}
               wrapper="span"
@@ -37,8 +37,10 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          Passionate and proficient MERN stack developer, well-versed in MongoDB, 
+          Express.js, React.js, and Node.js.Adept at crafting end-to-end web solutions,
+           excelling in front-end aesthetics, back-end functionality, and effective problem-solving.
+            Eager to take on a dynamic role as a MERN stack developer, committed to elevating organizational achievements.
           </p>
           <div>
             <Link

@@ -29,8 +29,9 @@ const Navbar = () => {
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
+          style={{ fontFamily: "'Courgette', cursive", textDecoration: "underline" }}
         >
-          LOGO
+          Raza
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
