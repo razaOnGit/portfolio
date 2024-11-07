@@ -7,8 +7,8 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Trail Food",
-    description: "Project 1 description",
+    title: "React Portfolio Website",
+    description: "A personal portfolio website built with React, showcasing projects, skills, and an interactive contact form.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -16,49 +16,33 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Food Ordering Application",
+    description: " Authentication,and CRUD functionality.",
+    image: "/images/projects/a2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Ai Gpt Clone Application",
+    description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts.",
+    image: "/images/projects/b.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    id: 4,
+    title: "E-commerce Application",
+    description: "Project 4 description- processing",
+    image: "/images/projects/3.png",
+    tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+
+ 
 ];
 
 const ProjectsSection = () => {
