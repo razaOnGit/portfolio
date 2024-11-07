@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import { AiFillLinkedin , AiOutlineGithub} from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 
 const navLinks = [
   {
@@ -33,6 +35,24 @@ const Navbar = () => {
         >
           Raza
         </Link>
+
+        <span className='navbar-text'>
+            <div className="socail-icons flex gap-2 ">
+            <a  rel="noopener noreferrer"className="w-[40px] h-[40px] flex justify-center items-center border-[1px] border-opacity-75 text-white hover:bg-white  border-white rounded-full  " href="https://www.linkedin.com/in/mdraza7/" target='_blank'>
+                <AiFillLinkedin 
+                className=' text-lg'/>
+              </a>
+              <a rel="noopener noreferrer" className="w-[40px] h-[40px] flex justify-center items-center border-[1px] border-opacity-75 border-white rounded-full  text-white  hover:bg-white  " href="https://github.com/razaOnGit" target='_blank'>               
+               <AiOutlineGithub
+                className=' text-lg'/>
+              </a>
+              <a rel="noopener noreferrer" className="w-[40px] h-[40px] flex justify-center items-center border-[1px] border-opacity-75 border-white rounded-full   text-white  hover:bg-white  " href="https://leetcode.com/u/the_razaOnLeetcode/" target='_blank'>
+                <SiLeetcode
+                className=' text-lg'/>
+              </a>
+            </div>
+            </span>
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
