@@ -34,6 +34,15 @@ const projectsData = [
   },
   {
     id: 4,
+    title: "Jarvis Virtual Assistant",
+    description: "A Python-based virtual assistant capable of speech recognition, natural language processing, and task automation. Features include opening applications, web searches, and personalized user interactions",
+    image: "/images/projects/4.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
+    previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
+  },
+  {
+    id: 4,
     title: "E-commerce Application",
     description: "Shopping_app_ description- Processing",
     image: "/images/projects/3.png",
