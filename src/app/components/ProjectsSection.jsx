@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: "Food Ordering Application",
-    description: " Authentication and CRUD functionality.",
+    description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
     image: "/images/projects/a2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razaOnGit/GoFood1",
@@ -42,7 +42,16 @@ const projectsData = [
     previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
   },
   {
-    id: 4,
+    id: 5,
+    title: "Flappy Bird Game",
+    description: "A clone of the popular Flappy Bird game built with Pygame, featuring a bird that dodges obstacles and scores points based on successful passes.",
+    image: "/images/projects/5.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/razaOnGit/flappy-game",
+    previewUrl: "https://github.com/razaOnGit/flappy-game",
+  },
+  {
+    id: 6,
     title: "E-commerce Application",
     description: "Shopping_app_ description- Processing",
     image: "/images/projects/3.png",
