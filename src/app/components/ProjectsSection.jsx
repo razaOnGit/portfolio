@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/projects/b.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
-    previewUrl: "/",
+    previewUrl: "https://ai-basic.vercel.app/",
   },
   {
     id: 4,
