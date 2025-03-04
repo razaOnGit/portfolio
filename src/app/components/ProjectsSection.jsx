@@ -28,7 +28,7 @@ const projectsData = [
     title: "Ai Gpt Clone Application",
     description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts.",
     image: "/images/projects/b.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
     previewUrl: "https://ai-basic.vercel.app/",
   },
@@ -52,13 +52,13 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "E-commerce Application",
-    description: "Shopping_app_ description- Processing",
+    title: "Edu-tech Application",
+    description: "A comprehensive mobile app designed to enhance learning with interactive features and a user-friendly interface.",
     image: "/images/projects/3.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+    gitUrl: "https://github.com/razaOnGit/Edu_app",
+    previewUrl: "https://b4f6-2405-201-a416-899-a5b0-2e4b-dbc8-bb32.ngrok-free.app/Home",
+}
 
  
 ];
