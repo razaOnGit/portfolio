@@ -220,7 +220,7 @@ const EmailSection = () => {
                 className={`bg-[#18191E] border ${
                   errors.subject ? "border-red-500" : "border-[#33353F]"
                 } text-white rounded-lg block w-full p-2.5`}
-                placeholder="Let’s work together!"
+                placeholder="Let&apos;s work together!"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
