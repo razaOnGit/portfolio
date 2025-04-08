@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect, useRef } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
@@ -77,9 +76,11 @@ const EmailSection = () => {
     const cooldownPeriod = 30000;
 
     if (timeSinceLastSubmission < cooldownPeriod) {
-      const timeLeft = Math.ceil((cooldownPeriod - timeSinceLastSubmission) / 1000);
+      const timeLeft = Math.ceil(
+        (cooldownPeriod - timeSinceLastSubmission) / 1000
+      );
       setErrors({
-        form: `Please wait ${timeLeft} seconds before sending another message`
+        form: `Please wait ${timeLeft} seconds before sending another message`,
       });
       return;
     }
@@ -94,7 +95,7 @@ const EmailSection = () => {
 
       // Send main contact form email
       const contactResult = await emailjs.send(
-        "service_7bpusae", 
+        "service_7bpusae",
         "template_ia4pqw3",
         {
           from_name: formData.from_email.split("@")[0],
@@ -102,7 +103,7 @@ const EmailSection = () => {
           subject: formData.subject,
           message: formData.message,
           reply_to: formData.from_email,
-          time: new Date().toLocaleString()
+          time: new Date().toLocaleString(),
         }
       );
 
@@ -125,13 +126,13 @@ const EmailSection = () => {
         setFormData({
           from_email: "",
           subject: "",
-          message: ""
+          message: "",
         });
         setLastSubmissionTime(Date.now());
       }
     } catch (err) {
       setErrors({
-        form: "Failed to send email. Please try again later."
+        form: "Failed to send email. Please try again later.",
       });
       console.error("Email sending error:", err);
     } finally {
@@ -149,13 +150,19 @@ const EmailSection = () => {
         <h5 className="text-3xl font-extrabold bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md my-4 animate-pulse">
           Let&apos;s Connect
         </h5>
-
         <p className="text-[#ADB7BE] mb-4 max-w-md leading-6">
-          <span className="text-primary-500 font-semibold">Ready to innovate together!</span>{' '}
-          I&apos;m actively seeking new opportunities where I can contribute my expertise in{' '}
-          <span className="text-white">full-stack development</span>. Whether you have an exciting project,
-          a challenging position, or just want to discuss tech - I&apos;m all ears and{' '}
-          <span className="text-primary-500">typically respond within 24 hours</span>.
+          <span className="text-primary-500 font-semibold">
+            Ready to innovate together!
+          </span>{" "}
+          I&apos;m actively seeking new opportunities where I can contribute my
+          expertise in{" "}
+          <span className="text-white">full-stack development</span>. Whether
+          you have an exciting project, a challenging position, or just want to
+          discuss tech - I&apos;m all ears and{" "}
+          <span className="text-primary-500">
+            typically respond within 24 hours
+          </span>
+          .
         </p>
         <div className="socials flex flex-row gap-2">
           <Link
@@ -173,92 +180,93 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
-      </div>
-      <div>
-        {emailSubmitted ? (
-          <div className="bg-green-900/30 text-green-400 px-4 py-3 rounded-md mb-6">
-            <h3 className="font-bold mb-1">Message Sent Successfully!</h3>
-            <p>Thank you for reaching out. I'll get back to you soon.</p>
-          </div>
+        <div>
+          {emailSubmitted ? (
+            <div className="bg-green-900/30 text-green-400 px-4 py-3 rounded-md mb-6">
+              <h3 className="font-bold mb-1">Message Sent Successfully!</h3>
+              <p>Thank you for reaching out. I&apos;ll get back to you soon.</p>
+            </div>
+          ) : null}
+        </div>
         ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit} noValidate>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Your email
-              </label>
-              <input
-                name="from_email"
-                type="email"
-                id="email"
-                value={formData.from_email}
-                onChange={handleChange}
-                className={`bg-[#18191E] border ${
-                  errors.from_email ? "border-red-500" : "border-[#33353F]"
-                } text-white rounded-lg block w-full p-2.5`}
-                placeholder="you@example.com"
-              />
-              {errors.from_email && (
-                <p className="text-red-500 text-sm mt-1">{errors.from_email}</p>
-              )}
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className={`bg-[#18191E] border ${
-                  errors.subject ? "border-red-500" : "border-[#33353F]"
-                } text-white rounded-lg block w-full p-2.5`}
-                placeholder="Let&apos;s work together!"
-              />
-              {errors.subject && (
-                <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-              )}
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                ref={textareaRef}
-                value={formData.message}
-                onChange={handleChange}
-                className={`bg-[#18191E] border ${
-                  errors.message ? "border-red-500" : "border-[#33353F]"
-                } text-white rounded-lg block w-full p-2.5 resize-none overflow-hidden`}
-                placeholder="Your message..."
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-              )}
-            </div>
-            {errors.form && (
-              <p className="text-red-500 text-sm mb-4">{errors.form}</p>
-            )}
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg transition-colors"
+        <form className="flex flex-col" onSubmit={handleSubmit} noValidate>
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="text-white block mb-2 text-sm font-medium"
             >
-              {isLoading ? "Sending..." : "Send Message"}
-            </button>
-          </form>
+              Your email
+            </label>
+            <input
+              name="from_email"
+              type="email"
+              id="email"
+              value={formData.from_email}
+              onChange={handleChange}
+              className={`bg-[#18191E] border ${
+                errors.from_email ? "border-red-500" : "border-[#33353F]"
+              } text-white rounded-lg block w-full p-2.5`}
+              placeholder="you@example.com"
+            />
+            {errors.from_email && (
+              <p className="text-red-500 text-sm mt-1">{errors.from_email}</p>
+            )}
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="subject"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Subject
+            </label>
+            <input
+              name="subject"
+              type="text"
+              id="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              className={`bg-[#18191E] border ${
+                errors.subject ? "border-red-500" : "border-[#33353F]"
+              } text-white rounded-lg block w-full p-2.5`}
+              placeholder="Let's work together!"
+            />
+            {errors.subject && (
+              <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
+            )}
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="message"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              ref={textareaRef}
+              value={formData.message}
+              onChange={handleChange}
+              className={`bg-[#18191E] border ${
+                errors.message ? "border-red-500" : "border-[#33353F]"
+              } text-white rounded-lg block w-full p-2.5 resize-none overflow-hidden`}
+              placeholder="Your message..."
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
+          </div>
+          {errors.form && (
+            <p className="text-red-500 text-sm mb-4">{errors.form}</p>
+          )}
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg transition-colors"
+          >
+            {isLoading ? "Sending..." : "Send Message"}
+          </button>
+        </form>
         )}
       </div>
     </section>
