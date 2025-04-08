@@ -146,15 +146,15 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-      <h5 className="text-3xl font-extrabold bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md my-4 animate-pulse">
-  Let's Connect
-</h5>
+        <h5 className="text-3xl font-extrabold bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md my-4 animate-pulse">
+          Let&apos;s Connect
+        </h5>
 
         <p className="text-[#ADB7BE] mb-4 max-w-md leading-6">
           <span className="text-primary-500 font-semibold">Ready to innovate together!</span>{' '}
-          I'm actively seeking new opportunities where I can contribute my expertise in{' '}
+          I&apos;m actively seeking new opportunities where I can contribute my expertise in{' '}
           <span className="text-white">full-stack development</span>. Whether you have an exciting project,
-          a challenging position, or just want to discuss tech - I'm all ears and{' '}
+          a challenging position, or just want to discuss tech - I&apos;m all ears and{' '}
           <span className="text-primary-500">typically respond within 24 hours</span>.
         </p>
         <div className="socials flex flex-row gap-2">
