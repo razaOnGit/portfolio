@@ -54,10 +54,10 @@ const projectsData = [
     id: 6,
     title: "Edu-tech Application",
     description: "A comprehensive mobile app designed to enhance learning with interactive features and a user-friendly interface.",
-    image: "/images/projects/3.png",
+    image: "/images/projects/3.jpg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/razaOnGit/Edu_app",
-    previewUrl: "https://b4f6-2405-201-a416-899-a5b0-2e4b-dbc8-bb32.ngrok-free.app/Home",
+    previewUrl: "https://competative-app.vercel.app/",
 }
 
  
