@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect, useRef } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
@@ -145,7 +146,10 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
+      {/* Left side - Background gradient */}
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      
+      {/* Left side - Content */}
       <div className="z-10">
         <h5 className="text-3xl font-extrabold bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 text-transparent bg-clip-text drop-shadow-md my-4 animate-pulse">
           Let&apos;s Connect
@@ -180,93 +184,100 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
-        <div>
-          {emailSubmitted ? (
-            <div className="bg-green-900/30 text-green-400 px-4 py-3 rounded-md mb-6">
-              <h3 className="font-bold mb-1">Message Sent Successfully!</h3>
-              <p>Thank you for reaching out. I&apos;ll get back to you soon.</p>
-            </div>
-          ) : null}
-        </div>
+      </div>
+
+      {/* Right side - Form */}
+      <div className="z-10">
+        {emailSubmitted ? (
+          <div className="bg-green-900/30 text-green-400 px-4 py-3 rounded-md mb-6">
+            <h3 className="font-bold mb-1">Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I&apos;ll get back to you soon.</p>
+          </div>
         ) : (
-        <form className="flex flex-col" onSubmit={handleSubmit} noValidate>
-          <div className="mb-6">
-            <label
-              htmlFor="email"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Your email
-            </label>
-            <input
-              name="from_email"
-              type="email"
-              id="email"
-              value={formData.from_email}
-              onChange={handleChange}
-              className={`bg-[#18191E] border ${
-                errors.from_email ? "border-red-500" : "border-[#33353F]"
-              } text-white rounded-lg block w-full p-2.5`}
-              placeholder="you@example.com"
-            />
-            {errors.from_email && (
-              <p className="text-red-500 text-sm mt-1">{errors.from_email}</p>
+          <form className="flex flex-col" onSubmit={handleSubmit} noValidate>
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Your email
+              </label>
+              <input
+                name="from_email"
+                type="email"
+                id="email"
+                value={formData.from_email}
+                onChange={handleChange}
+                className={`bg-[#18191E] border ${
+                  errors.from_email ? "border-red-500" : "border-[#33353F]"
+                } text-white rounded-lg block w-full p-2.5`}
+                placeholder="you@example.com"
+              />
+              {errors.from_email && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.from_email}
+                </p>
+              )}
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="subject"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Subject
+              </label>
+              <input
+                name="subject"
+                type="text"
+                id="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className={`bg-[#18191E] border ${
+                  errors.subject ? "border-red-500" : "border-[#33353F]"
+                } text-white rounded-lg block w-full p-2.5`}
+                placeholder="Let's work together!"
+              />
+              {errors.subject && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.subject}
+                </p>
+              )}
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="message"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                ref={textareaRef}
+                value={formData.message}
+                onChange={handleChange}
+                className={`bg-[#18191E] border ${
+                  errors.message ? "border-red-500" : "border-[#33353F]"
+                } text-white rounded-lg block w-full p-2.5 resize-none overflow-hidden`}
+                placeholder="Your message..."
+              />
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.message}
+                </p>
+              )}
+            </div>
+            {errors.form && (
+              <p className="text-red-500 text-sm mb-4">{errors.form}</p>
             )}
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="subject"
-              className="text-white block mb-2 text-sm font-medium"
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg transition-colors"
             >
-              Subject
-            </label>
-            <input
-              name="subject"
-              type="text"
-              id="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className={`bg-[#18191E] border ${
-                errors.subject ? "border-red-500" : "border-[#33353F]"
-              } text-white rounded-lg block w-full p-2.5`}
-              placeholder="Let's work together!"
-            />
-            {errors.subject && (
-              <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-            )}
-          </div>
-          <div className="mb-6">
-            <label
-              htmlFor="message"
-              className="text-white block mb-2 text-sm font-medium"
-            >
-              Message
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              ref={textareaRef}
-              value={formData.message}
-              onChange={handleChange}
-              className={`bg-[#18191E] border ${
-                errors.message ? "border-red-500" : "border-[#33353F]"
-              } text-white rounded-lg block w-full p-2.5 resize-none overflow-hidden`}
-              placeholder="Your message..."
-            />
-            {errors.message && (
-              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-            )}
-          </div>
-          {errors.form && (
-            <p className="text-red-500 text-sm mb-4">{errors.form}</p>
-          )}
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg transition-colors"
-          >
-            {isLoading ? "Sending..." : "Send Message"}
-          </button>
-        </form>
+              {isLoading ? "Sending..." : "Send Message"}
+            </button>
+          </form>
         )}
       </div>
     </section>
