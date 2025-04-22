@@ -11,11 +11,20 @@ const projectsData = [
     description: "A personal portfolio website built with React, showcasing projects, skills, and an interactive contact form.",
     image: "/images/projects/1a.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/razaOnGit/Edu_app",
     previewUrl: "/",
   },
   {
     id: 2,
+    title: "Ai Gpt Clone Application",
+    description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts. Built with secure JWT-based sign-in/sign-up authentication. Users can generate code snippets, paragraphs, and text responses from natural language prompts using an integrated AI model. The platform features dynamic prompt handling and a clean, responsive UI for seamless user experience.",
+    image: "/images/projects/b.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
+    previewUrl: "https://ai-basic.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Food Ordering Application",
     description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
     image: "/images/projects/a2.png",
@@ -24,16 +33,16 @@ const projectsData = [
     previewUrl: "https://gofood-raza.netlify.app/",
   },
   {
-    id: 3,
-    title: "Ai Gpt Clone Application",
-    description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts.",
-    image: "/images/projects/b.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
-    previewUrl: "https://ai-basic.vercel.app/",
-  },
-  {
     id: 4,
+    title: "Edu-tech Application",
+    description: "An interactive and user-friendly education web application built to simplify and enhance the online learning experience. The platform features a clean and responsive design with intuitive navigation. It includes an enquiry form for students to reach out with questions or requests, and integrates a secure payment system for course enrollments. Ideal for learners seeking a seamless educational interface.",
+    image: "/images/projects/3.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/razaOnGit/Edu_app",
+    previewUrl: "https://competative-app.vercel.app/",
+},
+  {
+    id: 5,
     title: "Jarvis Virtual Assistant",
     description: "A Python-based virtual assistant capable of speech recognition, natural language processing, and task automation. Features include opening applications, web searches, and personalized user interactions",
     image: "/images/projects/4.png",
@@ -42,23 +51,15 @@ const projectsData = [
     previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
   },
   {
-    id: 5,
+    id: 6,
     title: "Flappy Bird Game",
     description: "A clone of the popular Flappy Bird game built with Pygame, featuring a bird that dodges obstacles and scores points based on successful passes.",
     image: "/images/projects/5.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/razaOnGit/flappy-game",
     previewUrl: "https://github.com/razaOnGit/flappy-game",
-  },
-  {
-    id: 6,
-    title: "Edu-tech Application",
-    description: "A comprehensive mobile app designed to enhance learning with interactive features and a user-friendly interface.",
-    image: "/images/projects/3.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/razaOnGit/Edu_app",
-    previewUrl: "https://competative-app.vercel.app/",
-}
+  }
+
 
  
 ];
