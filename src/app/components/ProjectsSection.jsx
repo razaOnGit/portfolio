@@ -5,19 +5,20 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-  {
+   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "A personal portfolio website built with React, showcasing projects, skills, and an interactive contact form.",
-    image: "/images/projects/1a.png",
+    title: "Periskope Startup Company- Clone",
+    description: "This project is a simplified clone of Periskope with adding feature of chatbot to guide and assist users throughout the platform. The frontend is built using React.js and CSS, and the backend uses a clean structure with Node.js.Working  on chatbot to handle all edge cases for customer concern, queries to ensure smooth and responsive interaction. As it's deployed on Render, users may experience a few seconds of delay during the initial response due to cold starts on Render's free tier.",
+    image: "/images/projects/periskope.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/razaOnGit/Edu_app",
-    previewUrl: "/",
+    gitUrl: "https://github.com/razaOnGit/periskope-app",
+    previewUrl: "https://periskope-clone-hazel.vercel.app/",
   },
+  
   {
     id: 2,
     title: "Ai Gpt Clone Application",
-    description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts. Built with secure JWT-based sign-in/sign-up authentication. Users can generate code snippets, paragraphs, and text responses from natural language prompts using an integrated AI model. The platform features dynamic prompt handling and a clean, responsive UI for seamless user experience.",
+    description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts. Built with secure JWT-based sign-in/sign-up authentication. Users can generate code snippets, paragraphs, and text responses from natural language prompts using an integrated AI model. The platform features dynamic prompt handling and a clean, responsive UI for seamless user experience.As it's deployed on Render, users may experience a few seconds of delay during the initial response due to cold starts on Render's free tier.",
     image: "/images/projects/b.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
@@ -25,15 +26,6 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Food Ordering Application",
-    description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
-    image: "/images/projects/a2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/razaOnGit/GoFood1",
-    previewUrl: "https://gofood-raza.netlify.app/",
-  },
-  {
-    id: 4,
     title: "Edu-tech Application",
     description: "An interactive and user-friendly education web application built to simplify and enhance the online learning experience. The platform features a clean and responsive design with intuitive navigation. It includes an enquiry form for students to reach out with questions or requests, and integrates a secure payment system for course enrollments. Ideal for learners seeking a seamless educational interface.",
     image: "/images/projects/3.jpg",
@@ -42,7 +34,26 @@ const projectsData = [
     previewUrl: "https://competative-app.vercel.app/",
 },
   {
+    id: 4,
+    title: "Food Ordering Application",
+    description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
+    image: "/images/projects/a2.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/razaOnGit/GoFood1",
+    previewUrl: "https://gofood-raza.netlify.app/",
+  },
+  
+{
     id: 5,
+    title: "React Portfolio Website",
+    description: "A personal portfolio website built with React, showcasing projects, skills, and an interactive contact form.",
+    image: "/images/projects/1a.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/razaOnGit/Edu_app",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
     title: "Jarvis Virtual Assistant",
     description: "A Python-based virtual assistant capable of speech recognition, natural language processing, and task automation. Features include opening applications, web searches, and personalized user interactions",
     image: "/images/projects/4.png",
@@ -51,7 +62,7 @@ const projectsData = [
     previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
   },
   {
-    id: 6,
+    id: 7,
     title: "Flappy Bird Game",
     description: "A clone of the popular Flappy Bird game built with Pygame, featuring a bird that dodges obstacles and scores points based on successful passes.",
     image: "/images/projects/5.png",

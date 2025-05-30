@@ -18,6 +18,17 @@ const TAB_DATA = [
           <li><span className="text-[#ADB7BE]">Programming Languages :</span> C, C++, Python</li>
         </ul>
 
+        <h3 className="text-xl font-semibold mb-2 text-purple-500">Tools & Platforms</h3>
+        <ul className="list-disc pl-4">
+       <li>Git/Github</li>
+       <li>Linux/Shell scripting</li> 
+       <li>Docker </li> 
+       <li>Jenkins</li> 
+       <li>VS Code</li> 
+       <li>Windsurf</li>
+       <li>Postman</li> 
+        </ul>
+
         <h3 className="text-xl font-semibold mb-2 text-purple-500">Core CS Skills</h3>
         <ul className="list-disc pl-4 mb-4">
           <li>Operating Systems</li>
@@ -26,11 +37,7 @@ const TAB_DATA = [
           <li>Computer Networks</li>
         </ul>
 
-        <h3 className="text-xl font-semibold mb-2 text-purple-500">Tools & Version Control</h3>
-        <ul className="list-disc pl-4">
-          <li>Git & GitHub</li>
-          <li>Postman</li>
-        </ul>
+        
       </div>
     ),
   },
@@ -63,35 +70,62 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <div className="space-y-6">
+        {/* Salesforce Developer Intern */}
+        <div className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
+          <h3 className="text-lg font-semibold text-purple-400">Salesforce Developer Intern</h3>
+          <p className="text-sm text-[#ADB7BE]">SmartBridge and SmartInternz</p>
+          <p className="text-sm text-purple-300/60">Dec 2022 – Jan 2023 | Remote</p>
+          <ul className="mt-2 list-disc pl-5 text-sm text-gray-300 space-y-1">
+            <li>Gained practical experience in Salesforce development including Organizational Setup, Security, and Process Automation</li>
+            <li>Worked with Apex, Flow Builder, Testing, Debugging, and integrated development using VS Code and Salesforce CLI</li>
+            <li>Built and deployed Lightning Web Components (LWC) and utilized Salesforce APIs for custom functionality</li>
+            <li>Earned three Salesforce Superbadges: Apex Specialist, Process Automation Specialist, and Developer Super Set</li>
+          </ul>
+        </div>
+
+        {/* Cloud Computing with AWS */}
+        <div className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
+          <h3 className="text-lg font-semibold text-purple-400">Cloud Computing with AWS</h3>
+          <p className="text-sm text-[#ADB7BE]">Internshala Training</p>
+          <p className="text-sm text-purple-300/60">June 2022 – July 2022 | Remote</p>
+          <ul className="mt-2 list-disc pl-5 text-sm text-gray-300 space-y-1">
+            <li>Completed comprehensive training in AWS covering Cloud Computing fundamentals and core services</li>
+            <li>Gained hands-on experience with AWS Identity Access Management (IAM), S3, VPC, and EC2</li>
+            <li>Learned AWS architecture, databases, advanced services, security, management tools, billing, and pricing</li>
+            <li>Concluded training with a capstone project demonstrating end-to-end AWS deployment skills</li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
     title: "Certifications",
     id: "certifications",
     content: (
       <div className="space-y-4">
         <ul className="grid gap-4">
-          <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
-            <div className="flex justify-between items-start">
-              <h4 className="text-lg font-semibold text-purple-400">Cloud Computing with AWS</h4>
-              <span className="text-sm text-purple-300/60">July 2022</span>
-            </div>
-            <p className="text-[#ADB7BE] text-sm mt-1">Internshala</p>
-          </li>
+          
+
+        
 
           <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
             <div className="flex justify-between items-start">
-              <h4 className="text-lg font-semibold text-purple-400">Intro to Cybersecurity</h4>
-              <span className="text-sm text-purple-300/60">Nov 2022</span>
-            </div>
-            <p className="text-[#ADB7BE] text-sm mt-1">CISCO</p>
-          </li>
-
-          <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
-            <div className="flex justify-between items-start">
-              <h4 className="text-lg font-semibold text-purple-400">Intro to Network</h4>
+              <h4 className="text-lg font-semibold text-purple-400">Introduction to Network</h4>
               <span className="text-sm text-purple-300/60">June 2023</span>
             </div>
             <p className="text-[#ADB7BE] text-sm mt-1">CISCO</p>
           </li>
-
+          <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
+            <div className="flex justify-between items-start">
+              <h4 className="text-lg font-semibold text-purple-400">Python 3.4.3 Training</h4>
+              <span className="text-sm text-purple-300/60">March 2023</span>
+            </div>
+            <p className="text-[#ADB7BE] text-sm mt-1">Spoken Tutorial Project, IIT Bombay</p>
+          </li>
           <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
             <div className="flex justify-between items-start">
               <h4 className="text-lg font-semibold text-purple-400">Arduino Training</h4>
@@ -99,14 +133,15 @@ const TAB_DATA = [
             </div>
             <p className="text-[#ADB7BE] text-sm mt-1">Spoken Tutorial Lab, IIT Bombay</p>
           </li>
-
           <li className="bg-[#1a1a1a] p-4 rounded-lg border border-purple-500/20 hover:border-purple-500/50 transition-all">
             <div className="flex justify-between items-start">
-              <h4 className="text-lg font-semibold text-purple-400">Developer Superset</h4>
-              <span className="text-sm text-purple-300/60">Jan 2024</span>
+              <h4 className="text-lg font-semibold text-purple-400">Introduction to Cybersecurity</h4>
+              <span className="text-sm text-purple-300/60">Nov 2022</span>
             </div>
-            <p className="text-[#ADB7BE] text-sm mt-1">Salesforce</p>
+            <p className="text-[#ADB7BE] text-sm mt-1">CISCO</p>
           </li>
+
+      
         </ul>
       </div>
     ),
@@ -167,10 +202,14 @@ const AboutSection = () => {
                   <span className="text-purple-400">▹</span>
                   Developing RESTful APIs and backend services
                 </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-purple-400">▹</span>
+                   Working with Git/GitHub, Linux/Shell scripting, Docker, and Jenkins for DevOps tasks.
+                </li>
               </ul>
               
               <p className="mt-4 pl-6 text-gray-300">
-                I'm always eager to learn new technologies and collaborate with teams 
+                I&apos;m always eager to learn new technologies and collaborate with teams 
                 to build exceptional digital experiences.
               </p>
             </div>
