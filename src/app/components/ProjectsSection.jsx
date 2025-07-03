@@ -22,7 +22,7 @@ const projectsData = [
     image: "/images/projects/b.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
-    previewUrl: "https://ai-basic-mdraza9608-md-raza-khans-projects.vercel.app/",
+    previewUrl: "https://gpt-basic.vercel.app/",
   },
   {
     id: 3,
