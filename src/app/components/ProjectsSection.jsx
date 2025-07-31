@@ -11,7 +11,7 @@ const projectsData = [
     description: "1- Select a post or reel. 2- You choose the specific content you want to track Add a keyword or comment trigger. 3- This is what the system listens for Write the DM message - A personalized message that will be sent instantly when a match is found.",
     image: "/images/projects/instagram.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/razaOnGit/Instagram-Comment-Automation-DM/blob/main/SETUP-GUIDE.md",
     previewUrl: "https://automation-dm.vercel.app/",
   },
    {
