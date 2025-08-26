@@ -29,7 +29,7 @@ const projectsData = [
     title: "Ai Gpt Clone Application",
     description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts. Built with secure JWT-based sign-in/sign-up authentication. Users can generate code snippets, paragraphs, and text responses from natural language prompts using an integrated AI model. The platform features dynamic prompt handling and a clean, responsive UI for seamless user experience.As it's deployed on Render, users may experience a few seconds of delay during the initial response due to cold starts on Render's free tier.",
     image: "/images/projects/b.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile","Web"],
     gitUrl: "https://github.com/razaOnGit/chatgpt-clone",
     previewUrl: "https://gpt-basic.vercel.app/",
   },
@@ -41,9 +41,19 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/razaOnGit/Edu_app",
     previewUrl: "https://competative-app.vercel.app/",
-},
+  },
   {
     id: 5,
+    title: "Password Manager",
+    description: "A modern and intuitive password management application built with React.js, featuring a clean and responsive interface for secure credential storage. Currently utilizes localStorage for data persistence with seamless user experience, and is architectured for easy migration to MongoDB for enhanced scalability. The platform includes password generation, secure storage, and quick access features with a focus on simplicity and user-friendly design. Demonstrates full frontend development skills with consideration for backend integration.",
+    image: "/images/projects/image.png",
+    tag: ["All", "Web", "Mobile"],
+    gitUrl: "https://github.com/razaOnGit/Project-Basic-to-Advance/tree/main/11.Password_Manager",
+    previewUrl: "https://password-op-black.vercel.app/",
+  },
+ 
+  {
+    id: 6,
     title: "Food Ordering Application",
     description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
     image: "/images/projects/a2.png",
@@ -54,7 +64,7 @@ const projectsData = [
   
 
   {
-    id: 6,
+    id: 7,
     title: "Jarvis Virtual Assistant",
     description: "A Python-based virtual assistant capable of speech recognition, natural language processing, and task automation. Features include opening applications, web searches, and personalized user interactions",
     image: "/images/projects/4.png",
@@ -63,7 +73,7 @@ const projectsData = [
     previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
   },
   {
-    id: 7,
+    id: 8,
     title: "Flappy Bird Game",
     description: "A clone of the popular Flappy Bird game built with Pygame, featuring a bird that dodges obstacles and scores points based on successful passes.",
     image: "/images/projects/5.png",
