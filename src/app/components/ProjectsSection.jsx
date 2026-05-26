@@ -7,6 +7,15 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Team Flow - Task Management Application",
+    description: "Build a web app where users can create projects, assign tasks, and track progress with role-based access (Admin/Member)",
+    image: "/images/projects/team.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/razaOnGit/teamflow",
+    previewUrl: "https://content-transformation-production-71a7.up.railway.app/login",
+  },
+  {
+    id: 2,
     title: "Instagram Comment to DM Automation",
     description: "1- Select a post or reel. 2- You choose the specific content you want to track Add a keyword or comment trigger. 3- This is what the system listens for Write the DM message - A personalized message that will be sent instantly when a match is found.",
     image: "/images/projects/instagram.png",
@@ -15,7 +24,7 @@ const projectsData = [
     previewUrl: "https://automation-dm.vercel.app/",
   },
    {
-    id: 2,
+    id: 3,
     title: "Periskope Startup Company- Clone",
     description: "This project is a simplified clone of Periskope with adding feature of chatbot to guide and assist users throughout the platform. The frontend is built using React.js and CSS, and the backend uses a clean structure with Node.js.Working  on chatbot to handle all edge cases for customer concern, queries to ensure smooth and responsive interaction. As it's deployed on Render, users may experience a few seconds of delay during the initial response due to cold starts on Render's free tier.",
     image: "/images/projects/periskope.png",
@@ -25,7 +34,7 @@ const projectsData = [
   },
   
   {
-    id: 3,
+    id: 4,
     title: "Ai Gpt Clone Application",
     description: "Conversational AI application built to simulate chat interactions, featuring dynamic responses and customizable prompts. Built with secure JWT-based sign-in/sign-up authentication. Users can generate code snippets, paragraphs, and text responses from natural language prompts using an integrated AI model. The platform features dynamic prompt handling and a clean, responsive UI for seamless user experience.As it's deployed on Render, users may experience a few seconds of delay during the initial response due to cold starts on Render's free tier.",
     image: "/images/projects/b.png",
@@ -34,7 +43,7 @@ const projectsData = [
     previewUrl: "https://gpt-basic.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Edu-tech Application",
     description: "An interactive and user-friendly education web application built to simplify and enhance the online learning experience. The platform features a clean and responsive design with intuitive navigation. It includes an enquiry form for students to reach out with questions or requests, and integrates a secure payment system for course enrollments. Ideal for learners seeking a seamless educational interface.",
     image: "/images/projects/3.jpg",
@@ -43,7 +52,7 @@ const projectsData = [
     previewUrl: "https://competative-app.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Password Manager",
     description: "A modern and intuitive password management application built with React.js, featuring a clean and responsive interface for secure credential storage. Currently utilizes localStorage for data persistence with seamless user experience, and is architectured for easy migration to MongoDB for enhanced scalability. The platform includes password generation, secure storage, and quick access features with a focus on simplicity and user-friendly design. Demonstrates full frontend development skills with consideration for backend integration.",
     image: "/images/projects/image.png",
@@ -53,7 +62,7 @@ const projectsData = [
   },
  
   {
-    id: 6,
+    id: 7,
     title: "Food Ordering Application",
     description: " A feature-rich food delivery app that offers user authentication, menu browsing, and seamless order management. Implements CRUD functionality for managing user profiles, restaurant menus, and orders.",
     image: "/images/projects/a2.png",
@@ -64,7 +73,7 @@ const projectsData = [
   
 
   {
-    id: 7,
+    id: 8,
     title: "Jarvis Virtual Assistant",
     description: "A Python-based virtual assistant capable of speech recognition, natural language processing, and task automation. Features include opening applications, web searches, and personalized user interactions",
     image: "/images/projects/4.png",
@@ -73,7 +82,7 @@ const projectsData = [
     previewUrl: "https://github.com/razaOnGit/Jarvis-Virtual-Assistant",
   },
   {
-    id: 8,
+    id: 9,
     title: "Flappy Bird Game",
     description: "A clone of the popular Flappy Bird game built with Pygame, featuring a bird that dodges obstacles and scores points based on successful passes.",
     image: "/images/projects/5.png",
